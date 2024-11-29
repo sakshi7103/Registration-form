@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+        background-color: #ccc;
+      }
+      
+        .container {
+            width:400px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 5px;
+            height:700px;
+            background-color: whitesmoke;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select,
+    textarea {
+      width: 300px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius:20px;
+      box-sizing: border-box;
+      /* margin-bottom:100px; */
+      margin-left:10px;
+      text-align: center;
+      height: 50px;
+    }
+    button {
+      background-color:blue;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    
+    }
+    
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+           First Name <input type="text" id="firstName" name="firstName" placeholder="Enter First Name" >
+           <br><br>
+           Last Name <input type="text" id="lastName" name="lastName" placeholder="Enter last Name" >
+           <br><br>
+           User Name<input type="text" id="username" name="username" placeholder="Enter username" >
+           <br><br>
+            Email <input type="email" id="email" name="email" placeholder="Enter email" style="margin-left:40px;" >
+            <br><br>
+            Password <input type="password" id="password" name="password" placeholder="Enter password" style="margin-left:20px;" >
+            <br><br>
+            <label>Gender</label>
+            <input type="radio" id="male" name="gender" value="male" style="margin-left: 40px;">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <br><br>
+
+            <label>Hobbies</label>
+            <input type="checkbox" id="reading" name="hobbies" value="reading" style="margin-left: 30px;">
+            <label for="reading">Reading</label>
+            <input type="checkbox" id="writing" name="hobbies" value="writing">
+            <label for="writing">Writing</label>
+            <input type="checkbox" id="singing" name="hobbies" value="singing">
+            <label for="singing">Singing</label>
+            <br><br>
+
+            <!-- <label>City</label> -->
+           city <input type="text" id="City" name="name" placeholder="Enter city" style="margin-left:50px;">
+           <br><br>
+
+           country <input type="text" id="country" name="name" placeholder="Enter country" style="margin-left:30px;">
+           <br><br>
+
+           <label for="country">Select Car</label>
+           <select id="country" name="country" style="height:40px;">
+             <option value="">Name</option>
+             <option value="">Maruti</option>
+             <option value="">BMW</option>
+             <option value="">Activa</option>
+             
+             </select>
+             <br><br>
+
+             comment:<input type="text" id="firstName" name="Name" class="scroller" placeholder="The Cat Was Paying In The Garden"  >
+             
+             <button type="submit" class="submit" style="margin-left:90px; width: 150px; border-radius:20px; margin-top: 10px;" >Save</button>
+             <button type="reset" class="reset" style="float: right;margin-right:-5px; width: 150px; border-radius:20px; margin-top: 10px;">Reset</button>
+      
+      
+
+
+        </form>
+        </div>
+    
+</body>
+</html>
